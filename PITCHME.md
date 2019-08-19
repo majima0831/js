@@ -11,7 +11,10 @@ var, let, const
 DOMとは Document Object Model
 
 HTMLをJSのソースから操作が可能
+
 getElementById(id)
+
 対象のIDを持つ要素を取得
+
 取得した要素を書き換える
 
