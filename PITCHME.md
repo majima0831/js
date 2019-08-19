@@ -57,11 +57,18 @@ DOMツリーとノード
 ノードとはHTMLでいうタグ
 
 代表的なもの
-document.getElementById(id)
+`document.getElementById(id)`
 
 対象のIDを持つ要素を取得
 
-取得した要素を書き換える
+documentとはDocumentオブジェクトを表している
+
+DOMツリーの最上位に位置するノードである。
+
+`document.getElementById(id)`を和訳すると
+
+DOM全体を対象に引数として渡されたidと一致するIDを検索し、該当のノードを取得する
+ということになる。
 
 ### ES6について
 ES6とは
@@ -86,6 +93,13 @@ let arrowFunc = (x) => {
 oldFunc('古い関数');
 arrowFunc('アロー関数');
 ```
+
+ただ省略するためのものではない。
+
+thisの扱いが束縛？される
+
+よってアローはfunctionのまるっきり上位互換というわけではないので、thisの使い方によって使い分けが必要になる
+
 #### モジュール機能
 
 
