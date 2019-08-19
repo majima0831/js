@@ -9,6 +9,7 @@ var, let, const
 
 ### DOM操作
 DOMとは Document Object Model
+
 HTMLをJSのソースから操作が可能
 getElementById(id)
 対象のIDを持つ要素を取得
