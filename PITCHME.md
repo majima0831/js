@@ -1,4 +1,7 @@
-# jsの資料
+# Basic of JavaScript
 
+## JavaScript(JS)
+JSとは動的な処理を行うためのプログラミング言語
 
-# etst
+## 基本的な構文
+
