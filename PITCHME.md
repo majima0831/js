@@ -3,6 +3,15 @@
 ## JavaScript(JS)
 JSとは動的な処理を行うためのプログラミング言語
 
+Javaとは違う
+
+なぜJavaと名前が似ているか？
+
+元々はLiveScriptだったが、Javaがプログラミング言語として隆盛していたのでそれにあやかろう
+
+LiveScript => JavaScript
+になった！
+
 ## 基本的な構文
 ### 変数宣言
 var, let, constの各説明
