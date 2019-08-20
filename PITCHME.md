@@ -46,7 +46,8 @@ DOMとは Document Object Model
 DOMを利用する事で、HTMLの探索やスタイルの変更・イベントの設定・HTML要素の取得の他に、振る舞いを変えたり、ユーザー操作時の処理を設定することができます。
 ---
 DOMツリーとノード(ここでDOMツリーの画像)
-<img src="DOM tree.gif">
+<img src="assets/DOM.gif">
+
 ノードとはHTMLでいうタグ
 ---
 DOM操作で代表的なもの
