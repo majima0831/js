@@ -1,6 +1,6 @@
-# Basic of JavaScript
+### Basic of JavaScript
 ---
-## JavaScript(JS)
+### JavaScript(JS)
 JSとは動的な処理を行うためのプログラミング言語
 ---
 Javaとは違う
@@ -16,6 +16,9 @@ LiveScript => JavaScript
 ---
 ### 変数宣言
 JSには変数宣言に使用するキーワードが3つ存在する
+```
+??? test = '変数宣言';
+```
 - var |
 - let(ES6) |
 - const(ES6) |
@@ -55,9 +58,12 @@ DOM操作で代表的なもの
 
 - DOMツリーの最上位に位置するノードである。 |
 ---
-`document.getElementById(id)`を無理矢理和訳すると
+`document.getElementById(id)`
+
+を無理矢理和訳すると
 
 DOM全体を対象に引数として渡されたidと一致するIDを検索し、該当のノードを取得する
+
 ということになる。
 ---
 ### ES6について
