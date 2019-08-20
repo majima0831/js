@@ -117,29 +117,36 @@ import { mettyaNagaiNamaeNoExport as shortExport } from "/common.js";
 ```
 ---
 from先ファイルのexportを全て取得する。
+
 ```
 import * as myModule from "/common.js";
 ```
+
 from先のtest()を利用したい場合は
+
 ```
 myModule.test();
 ```
 で利用可能
 ---
 利用したいexportが1つの場合はfrom先で命名されている名前を指定して取得する
+
 ```
 import { myExport } from "/common.js";
 ```
 ---
 1つのファイルから複数importする場合はコンマで分けて取得できる
+
 ```
 import { foo, bar } from "/common.js";
 ```
 ---
 インポートする時にインポート先での名前を変更することも可能
+
 ```
 import { mettyaNagaiNamaeNoExport as shortExport } from "/common.js";
 ```
+
 { export元での名前　as import先での名前 } from ~
 ---
 ## 小技
