@@ -16,13 +16,12 @@ LiveScript => JavaScript
 ---
 ### 変数宣言
 JSには変数宣言に使用するキーワードが3つ存在する
--
-var
+---
+- var |
 
-let(ES6)
+- let(ES6) |
 
-const(ES6)
-|
+- const(ES6) |
 ---
 `a = 1;`
 で上記のキーワードを省略した変数宣言することが可能
