@@ -100,8 +100,49 @@ thisの扱いが束縛？される
 よってアローはfunctionのまるっきり上位互換というわけではないので、thisの使い方によって使い分けが必要になる
 ---
 #### モジュール機能
+モジュール機能前のjsファイルの読み込み
+```
+<script src="js/vender/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/~~~.js"></script>
+<script src="js/~~~.js"></script>
+```
+---
+importの仕方が何通りか存在する
+```
+import * as myModule from "/common.js";
+import { myExport } from "/common.js";
+import { foo, bar } from "/common.js";
+import { mettyaNagaiNamaeNoExport as shortExport } from "/common.js";
+```
+---
+```
+import * as myModule from "/common.js";
+```
+from先ファイルのexportを全て取得する。
 
+from先のtest()を利用したい場合は
+```
+myModule.test();
+```
+で利用可能
+---
+```
+import { myExport } from "/common.js";
+```
+利用したいexportが1つの場合はfrom先で命名されている名前を指定して取得する
+---
+```
+import { foo, bar } from "/common.js";
+```
+1つのファイルから複数importする場合はコンマで分けて取得できる
+---
+```
+import { mettyaNagaiNamaeNoExport as shortExport } from "/common.js";
+```
+インポートする時にインポート先での名前を変更することも可能
 
+{ export元での名前　as import先での名前 } from ~
 ---
 ## 小技
 オブジェクトにはconsole.dir()が使える
