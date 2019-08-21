@@ -111,6 +111,7 @@ DOM操作で代表的なもの
 `document.getElementById(id)`
 
 対象のIDを持つ要素を取得
+取得する要素を指定しているダイレクトアクセス
 ---
 documentってなに？
 - documentとはDocumentオブジェクトを表している |
@@ -124,6 +125,14 @@ documentってなに？
 DOM全体を対象に引数として渡されたidと一致するIDを検索し、該当のノードを取得する
 
 ということになる。
+---
+### ノードウォーキング
+あるノードを基準に、その親や子のノード取得する方法
+---
+- 親要素の取得
+`element.parentNode` |
+- 最初の子要素
+`element.firstElementChild` |
 ---
 ### ES6について
 ES6とは
