@@ -319,6 +319,8 @@ function hoist() {
 hoist();
 console.log(test);
 ```
+
+letやconstでは巻き上げは起こらない
 ---
 ### Hoistingについて作者から
 ---
@@ -329,6 +331,8 @@ This order, which is forced in ML languages (such as LISP) is painful because pr
 Languages like C/C++ get around this issue by using header files, and standalone declarations, which JavaScript doesn’t have.
 
 Also, hoisting was required for implementing mutual recursion.
+---
+letやconstが生まれたのは巻き上げ防止の為だそうです。
 ---
 ### Event Bubbling
 ---
