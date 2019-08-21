@@ -103,9 +103,18 @@ const result = test.map(item => item + num)
 ---
 ### filter
 ```
-var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+var words = [
+      'spray',
+      'limit',
+      'elite',
+      'exuberant',
+      'destruction',
+      'present'
+];
+
 // 文字列の長さが6より大きいものを取得
 const result = words.filter(word => word.length > 6);
+
 // result = ["exuberant", "destruction", "present"]
 ```
 条件にあった要素のみを取得
@@ -113,10 +122,11 @@ const result = words.filter(word => word.length > 6);
 ### find
 ```
 var array1 = [5, 12, 8, 130, 44];
+
 // 10より大きい値を取得
-var found = array1.find(function(element) {
+var found = array1.find(element =>
   return element > 10;
-});
+);
 // found = 12
 ```
 条件にあった最初の要素を取得
@@ -276,11 +286,61 @@ import { mettyaNagaiNamaeNoExport as shortExport } from "/common.js";
 { export元での名前　as import先での名前 } from ~
 ---
 ### Hoisting(巻き上げ)
-console.log(test);
-let test = 'マキアージュ'
+```
+test('巻き上がります');
 
+function test(x) {
+      console.log(x);
+};
+```
+関数を定義する前に関数を呼び出す
+
+他プログラミングならエラーになるがJSは巻き上げが起こって問題なく動作する
 ---
-### イベントバブリング
+#### ただし関数の定義の仕方で巻き上げを起こさないことも出来る
+```
+test('巻き上がります');
+
+let test = function(x) {
+      console.log(x);
+};
+```
+関数式での関数なら巻き上げは起きない
+---
+### 変数の巻き上げ
+```
+var test = 321;
+function hoist() {
+      console.log(test);
+      var test = 123;
+      console.log(test);
+};
+
+hoist();
+console.log(test);
+```
+---
+```
+var test = 321;
+function hoist() {
+      var test;
+      console.log(test);
+      var test = 123;
+      console.log(test);
+};
+
+hoist();
+console.log(test);
+```
+---
+### Hoistingについての作者から
+---
+In other words, what happened was that JavaScript implemented hoisting of function declarations so that programmers would not be forced to place the inner-most functions at the top of the script block, and the outer-most (top-level) functions at the bottom.
+This order, which is forced in ML languages (such as LISP) is painful because programmers prefer reading code top-to-bottom, rather than bottom-to-top.
+Languages like C/C++ get around this issue by using header files, and standalone declarations, which JavaScript doesn’t have.
+Also, hoisting was required for implementing mutual recursion.
+---
+### Event Bubbling
 ---
 ### Scope Prototype
 ---
