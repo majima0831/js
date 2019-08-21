@@ -332,7 +332,11 @@ Languages like C/C++ get around this issue by using header files, and standalone
 
 Also, hoisting was required for implementing mutual recursion.
 ---
-letやconstが生まれたのは巻き上げ防止の為だそうです。
+参考
+
+https://qiita.com/Stranger_31/items/20baef019c117c3180d9
+
+ちなみにletやconstが生まれたのは巻き上げ防止の為だそうです。
 ---
 ### Event Bubbling
 ---
