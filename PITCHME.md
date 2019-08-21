@@ -206,6 +206,16 @@ import { mettyaNagaiNamaeNoExport as shortExport } from "/common.js";
 
 { export元での名前　as import先での名前 } from ~
 ---
+### Hoisting(巻き上げ)
+---
+### イベントバブリング
+---
+### Scope Prototype
+---
+### strict
+---
+### shadow DOM
+---
 ## 小技
 オブジェクトにはconsole.dir()が使える
 consoleオブジェクトはけっこう種類ある
