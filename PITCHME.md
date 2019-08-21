@@ -40,6 +40,36 @@ const test1 = '1つめ',
       test2 = '2つめ';
 ```
 ---
+
+### 配列、オブジェクト
+```
+var test = ['a','b','c'];
+console.log(test[1]);
+```
+#### 配列
+先頭のインデックスが0
+上記コードではコンソールに出力されるのはb
+---
+```
+var test = {
+      title: 'タイトル名',
+      text: '本文',
+      num: 1,
+};
+console.log(test['title']);
+```
+#### オブジェクト
+プロパティと値を紐づけた配列
+前述した配列と違いインデックスでの取得はできない。
+---
+```
+× User-Name: 'Majima'
+× User Name: 'Majima'
+○ 'User Name': 'Majima'
+```
+オブジェクトのプロパティは"や'で囲うが省略も可能
+ただし-(ハイフン)やスペースを含んだプロパティにする場合は省略はできない
+---
 ### DOM操作
 DOMとは Document Object Model
 
