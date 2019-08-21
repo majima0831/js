@@ -129,10 +129,10 @@ DOM全体を対象に引数として渡されたidと一致するIDを検索し�
 ### ノードウォーキング
 あるノードを基準に、その親や子のノード取得する方法
 ---
-- 親要素の取得
-`element.parentNode` |
-- 最初の子要素
-`element.firstElementChild` |
+- 親要素の取得 |
+- `element.parentNode` |
+- 最初の子要素 |
+- `element.firstElementChild` |
 ---
 ### ES6について
 ES6とは
