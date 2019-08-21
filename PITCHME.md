@@ -90,12 +90,55 @@ test.forEach(x => {
 ```
 ---
 ### map
+```
+const num = 3
+const test = [1, 2, 3, 4, 5]
+
+// 配列のすべての値をaの値だけ足します。
+const result = test.map(item => item + num)
+// result = [4, 5, 6, 7, 8]
+```
+配列の各要素を加工する場合
+
 ---
 ### filter
----
-### some
+```
+var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+// 文字列の長さが6より大きいものを取得
+const result = words.filter(word => word.length > 6);
+// result = ["exuberant", "destruction", "present"]
+```
+条件にあった要素のみを取得
 ---
 ### find
+```
+var array1 = [5, 12, 8, 130, 44];
+// 10より大きい値を取得
+var found = array1.find(function(element) {
+  return element > 10;
+});
+// found = 12
+```
+条件にあった最初の要素を取得
+条件にあう要素がなかった場合undfinedを返す
+---
+### some
+```
+const ary = [1, 2, 3, 4, 5]
+// 配列の中に偶数が含まれているかどうかをチェックします
+const isBool = ary.some(item => item % 2 === 0)
+// isBool = true
+```
+条件にあった要素を検索
+
+ある時はtrue
+
+ない時はfalseを返す
+---
+なぜforeachを避けるのか
+
+foreachでは何らかのループ処理であるとしか判別できないが、各関数は知っていればどういった意図で使用するものかが分かるので、
+コードリーディングする際に負担になりづらいのが利点となる。
 ---
 ### DOM操作
 DOMとは Document Object Model
@@ -233,6 +276,9 @@ import { mettyaNagaiNamaeNoExport as shortExport } from "/common.js";
 { export元での名前　as import先での名前 } from ~
 ---
 ### Hoisting(巻き上げ)
+console.log(test);
+let test = 'マキアージュ'
+
 ---
 ### イベントバブリング
 ---
@@ -241,15 +287,3 @@ import { mettyaNagaiNamaeNoExport as shortExport } from "/common.js";
 ### strict
 ---
 ### shadow DOM
----
-## 小技
-オブジェクトにはconsole.dir()が使える
-consoleオブジェクトはけっこう種類ある
-
-js.arrayの関数紹介
-filter,map,some,findなど
-
-なぜforeachを避けるのか
-
-foreachでは何らかのループ処理であるとしか判別できないが、各関数は知っていればどういった意図で使用するものかが分かるので、
-コードリーディングする際に負担になりづらいのが利点となる。
