@@ -320,24 +320,14 @@ hoist();
 console.log(test);
 ```
 ---
-```
-var test = 321;
-function hoist() {
-      var test;
-      console.log(test);
-      var test = 123;
-      console.log(test);
-};
-
-hoist();
-console.log(test);
-```
----
-### Hoistingについての作者から
+### Hoistingについて作者から
 ---
 In other words, what happened was that JavaScript implemented hoisting of function declarations so that programmers would not be forced to place the inner-most functions at the top of the script block, and the outer-most (top-level) functions at the bottom.
+
 This order, which is forced in ML languages (such as LISP) is painful because programmers prefer reading code top-to-bottom, rather than bottom-to-top.
+
 Languages like C/C++ get around this issue by using header files, and standalone declarations, which JavaScript doesn’t have.
+
 Also, hoisting was required for implementing mutual recursion.
 ---
 ### Event Bubbling
