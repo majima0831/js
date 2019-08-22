@@ -204,7 +204,7 @@ DOM全体を対象に引数として渡されたidと一致するIDを検索し�
 
 `element.nextElementSibling`
 ---
-### ES6について
+### ES6(ES2015)について
 ES6とは
 - ECMA Script6 の略 |
 ---
@@ -213,7 +213,7 @@ ES = ECMA Script
 Ecma Internationalという機関のもとで標準化されたJS
 ---
 ### ES2015って？
-元々は1,2,3...
+元々はES1,2,3...
 
 と続いていたが、web業界の発展がめざましく、今後は毎年標準化していこう
 
@@ -229,22 +229,25 @@ Ecma Internationalという機関のもとで標準化されたJS
 #### アロー関数
 functionを使用していたのを省略した形で記述できる
 ```
-let oldFunc = function(x) {
-  console.log(x);
+// 従来のfunction
+function inc(x) {
+  return x + 1;
 }
 
-let arrowFunc = (x) => {
-  console.log(x);
-}
-oldFunc('古い関数');
-arrowFunc('アロー関数');
+// アロー
+const inc = (x) => x + 1; // 出力の式が一行の場合はreturnは不要
 ```
 ---
 ただ省略するためのものではない。
 
 thisの扱いが束縛？される
+---
+宣言元のthisを参照する
 
-よってアローはfunctionのまるっきり上位互換というわけではないので、thisの使い方によって使い分けが必要になる
+- arrow function: 内部のthisは宣言時のスコープを持つオブジェクトになる
+- function: 内部のthisは実行時のレシーバであるオブジェクトになる
+
+よってアロー関数はfunctionのまるっきり上位互換というわけではないので、thisの使い方によって使い分けが必要になる
 ---
 #### モジュール機能
 モジュール機能前のjsファイルの読み込み
