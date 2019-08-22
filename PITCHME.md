@@ -260,13 +260,8 @@ thisの扱いが束縛？される
 よってアローはfunctionのまるっきり上位互換というわけではないので、thisの使い方によって使い分けが必要になる
 ---
 #### モジュール機能
-モジュール機能前のjsファイルの読み込み
-```
-<script src="js/vender/jquery.min.js"></script>
-<script src="js/common.js"></script>
-<script src="js/~~~.js"></script>
-<script src="js/~~~.js"></script>
-```
+- import
+- export
 ---
 importの仕方が何通りか存在する
 ```
