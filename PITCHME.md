@@ -60,7 +60,7 @@ var test = {
 console.log(test['title']);
 ```
 プロパティと値を紐づけた配列
-前述した配列と違いインデックスでの取得はできない。
+前述した配列と違いインデックスでの取得はできない
 ---
 ```
 × User-Name: 'Majima'
@@ -89,13 +89,16 @@ test.forEach(x => {
 });
 ```
 ---
+### 目的別メソッド
+JSのArrayオブジェクトにはメソッドが多数存在する
+---
 ### map
 ```
 const num = 3
-const test = [1, 2, 3, 4, 5]
+const items = [1, 2, 3, 4, 5]
 
 // 配列のすべての値をaの値だけ足します。
-const result = test.map(item => item + num)
+const result = items.map(item => item + num)
 // result = [4, 5, 6, 7, 8]
 ```
 配列の各要素を加工する場合
@@ -121,11 +124,11 @@ const result = words.filter(word => word.length > 6);
 ---
 ### find
 ```
-var array1 = [5, 12, 8, 130, 44];
+var items = [5, 12, 8, 130, 44];
 
 // 10より大きい値を取得
-var found = array1.find(element =>
-  return element > 10;
+var found = items.find(item =>
+  return item > 10;
 );
 // found = 12
 ```
@@ -134,9 +137,9 @@ var found = array1.find(element =>
 ---
 ### some
 ```
-const ary = [1, 2, 3, 4, 5]
+const items = [1, 2, 3, 4, 5]
 // 配列の中に偶数が含まれているかどうかをチェックします
-const isBool = ary.some(item => item % 2 === 0)
+const isBool = items.some(item => item % 2 === 0)
 // isBool = true
 ```
 条件にあった要素を検索
@@ -145,15 +148,16 @@ const isBool = ary.some(item => item % 2 === 0)
 
 ない時はfalseを返す
 ---
-なぜforeachを避けるのか
+### forEach使えばいいじゃん
+なぜforEachを避けるのか？
 
-foreachでは何らかのループ処理であるとしか判別できないが、各関数は知っていればどういった意図で使用するものかが分かるので、
-コードリーディングする際に負担になりづらいのが利点となる。
+foreachでは何らかのループ処理であるとしか判別できないが、各関数は知っていればどういった意図で使用するものか一目で分かるので、
+コードリーディングする際に負担になりづらいのが利点となる
 ---
 ### DOM操作
 DOMとは Document Object Model
 
-DOMを利用する事で、HTMLの探索やスタイルの変更・イベントの設定・HTML要素の取得の他に、振る舞いを変えたり、ユーザー操作時の処理を設定することができます。
+DOMを利用する事で、HTMLの探索やスタイルの変更・イベントの設定・HTML要素の取得の他に、振る舞いを変えたり、ユーザー操作時の処理を設定することができます
 ---
 DOMツリーとノード (ここでDOMツリーの画像)
 <img src="assets/DOM.gif">
@@ -226,7 +230,7 @@ Ecma Internationalという機関のもとで標準化されたJS
 - アロー関数 |
 - モジュール機能 |
 ---
-#### アロー関数
+#### アロー関数式
 functionを使用していたのを省略した形で記述できる
 ```
 // 従来のfunction
@@ -238,8 +242,8 @@ function inc(x) {
 const inc = (x) => x + 1; // 出力の式が一行の場合はreturnは不要
 ```
 ---
-ただ省略するためのものではない。
-
+ただ省略するためのものではない
+↓ (これはアロー関数式ではない)
 thisの扱いが束縛？される
 ---
 宣言元のthisを参照する
@@ -247,7 +251,7 @@ thisの扱いが束縛？される
 - arrow function: 内部のthisは宣言時のスコープを持つオブジェクトになる
 - function: 内部のthisは実行時のレシーバであるオブジェクトになる
 
-よってアロー関数はfunctionのまるっきり上位互換というわけではないので、thisの使い方によって使い分けが必要になる
+よってアローはfunctionのまるっきり上位互換というわけではないので、thisの使い方によって使い分けが必要になる
 ---
 #### モジュール機能
 モジュール機能前のjsファイルの読み込み
@@ -350,7 +354,7 @@ Also, hoisting was required for implementing mutual recursion.
 
 https://qiita.com/Stranger_31/items/20baef019c117c3180d9
 
-ちなみにletやconstが生まれたのは巻き上げ防止の為だそうです。
+ちなみにletやconstが生まれたのは巻き上げ防止の為であるそう
 ---
 ### Event Bubbling
 ---
