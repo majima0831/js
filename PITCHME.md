@@ -155,10 +155,11 @@ DOMとは Document Object Model
 
 DOMを利用する事で、HTMLの探索やスタイルの変更・イベントの設定・HTML要素の取得の他に、振る舞いを変えたり、ユーザー操作時の処理を設定することができます。
 ---
-DOMツリーとノード(ここでDOMツリーの画像)
+DOMツリーとノード (ここでDOMツリーの画像)
 <img src="assets/DOM.gif">
 
-ノードとはHTMLでいうタグ
+- DOMツリーとはHTMLドキュメントやXMLをツリー構造として表現したもの
+- ノードとはHTMLでいうタグ
 ---
 DOM操作で代表的なもの
 `document.getElementById(id)`
@@ -173,9 +174,8 @@ documentってなに？
 ---
 `document.getElementById(id)`
 
-を無理矢理和訳すると
-
 DOM全体を対象に引数として渡されたidと一致するIDを検索し、該当のノードを取得する
+
 
 ということになる。
 ---
