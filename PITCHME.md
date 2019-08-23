@@ -250,7 +250,7 @@ thisの扱いが束縛される
 ---
 宣言元のthisを参照する
 
-- arrow function: 内部のthisは宣言時のスコープを持つオブジェクトになる
+- アロー: 内部のthisは宣言時のスコープを持つオブジェクトになる
 - function: 内部のthisは実行時のレシーバであるオブジェクトになる
 
 よってアローはfunctionのまるっきり上位互換というわけではないので、thisの使い方によって使い分けが必要になる
@@ -352,11 +352,3 @@ Also, hoisting was required for implementing mutual recursion.
 https://qiita.com/Stranger_31/items/20baef019c117c3180d9
 
 ちなみにletやconstが生まれたのは巻き上げ防止の為であるそう
----
-### Event Bubbling
----
-### Scope Prototype
----
-### strict
----
-### shadow DOM
