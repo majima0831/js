@@ -199,6 +199,7 @@ DOMツリーとノード (ここでDOMツリーの画像)
 - ノードとはHTMLでいうタグ
 ---
 DOM操作で代表的なもの
+
 `document.getElementById(id)`
 
 対象のIDを持つ要素を取得
