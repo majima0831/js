@@ -353,4 +353,4 @@ https://qiita.com/Stranger_31/items/20baef019c117c3180d9
 
 ちなみにletやconstが生まれたのは巻き上げ防止の為であるそう
 ---
-<img src="assets/おわり.jpeg">
+<img src="assets/end.jpeg">
