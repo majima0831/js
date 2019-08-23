@@ -250,12 +250,8 @@ thisの扱いが束縛される
 ---
 宣言元のthisを参照する
 
-- arrow function: 
-
-内部のthisは宣言時のスコープを持つオブジェクトになる
-- function: 
-
-内部のthisは実行時のレシーバであるオブジェクトになる
+- arrow function: 内部のthisは宣言時のスコープを持つオブジェクトになる
+- function: 内部のthisは実行時のレシーバであるオブジェクトになる
 
 よってアローはfunctionのまるっきり上位互換というわけではないので、thisの使い方によって使い分けが必要になる
 ---
@@ -302,7 +298,7 @@ import { foo, bar } from "/common.js";
 import { mettyaNagaiNamaeNoExport as shortExport } from "/common.js";
 ```
 
-{ export元での名前　as import先での名前 } from ~
+{ export元での名前 as import先での名前 } from ~
 ---
 ### Hoisting(巻き上げ)
 ```
