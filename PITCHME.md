@@ -371,6 +371,8 @@ console.log(test);
 
 letやconstでは巻き上げは起こらない
 ---
+### なぜこんな仕様があるの？
+---
 ### Hoistingについて作者から
 ---
 In other words, what happened was that JavaScript implemented hoisting of function declarations so that programmers would not be forced to place the inner-most functions at the top of the script block, and the outer-most (top-level) functions at the bottom.
