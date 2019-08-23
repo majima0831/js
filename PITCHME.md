@@ -127,6 +127,7 @@ const items = [1, 2, 3, 4, 5]
 
 // 配列のすべての値をaの値だけ足します。
 const result = items.map(item => item + num)
+
 // result = [4, 5, 6, 7, 8]
 ```
 配列の各要素を加工する場合
@@ -158,6 +159,7 @@ var items = [5, 12, 8, 130, 44];
 var found = items.find(item =>
   return item > 10;
 );
+
 // found = 12
 ```
 条件にあった最初の要素を取得
@@ -167,6 +169,7 @@ var found = items.find(item =>
 ```
 const items = [1, 2, 3, 4, 5]
 // 配列の中に偶数が含まれているかどうかをチェックします
+
 const isBool = items.some(item => item % 2 === 0)
 // isBool = true
 ```
