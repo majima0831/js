@@ -280,7 +280,7 @@ const inc = (x) => x + 1; // 出力の式が一行の場合はreturnは不要
 
 ↓
 
-thisの扱いが束縛される
+functionと違いthisの扱いが束縛されない
 ---
 宣言元のthisを参照する
 
